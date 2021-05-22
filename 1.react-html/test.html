@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- React的核心库,与宿主环境无关 -->
+  <script crossorigin src="https://unpkg.com/react@17.0.1/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.development.js"></script>
+  <script>
+    // 创建一个p元素
+    var span = React.createElement('span', {}, "一个P元素");
+    // 创建一个H1元素
+    var h1 = React.createElement('h1', {
+      title: '第一个React元素'
+    },"Hello World",span);
+
+    ReactDOM.render(h1, document.getElementById('root'));
+
+  </script>
+</body>
+</html>
