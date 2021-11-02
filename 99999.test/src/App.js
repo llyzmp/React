@@ -1,11 +1,11 @@
-import InputTest from './components/InputTest'
+import BindData from './components/BindData'
 
 import React from 'react'
 
 export default function App() {
   return (
     <div>
-      <InputTest />
+      <BindData />
     </div>
   )
 }
